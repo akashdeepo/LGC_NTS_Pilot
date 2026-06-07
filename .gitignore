@@ -1,0 +1,44 @@
+# --- Python ----------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# --- LaTeX -----------------------------------------------------------
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# --- OS / IDE --------------------------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Run artifacts ---------------------------------------------------
+# Intermediate temp files written by run_mc.py during checkpointing.
+*.npz.tmp
+
+# --- Things explicitly NOT ignored -----------------------------------
+# We DO commit:
+#   phase3_implementation/cache/*.npz   - small, expensive to compute, useful
+#                                          for reviewers who don't want to
+#                                          re-run build_ground_truth.
+#   phase3_implementation/results/*.npz - the raw MC outputs that the figures
+#                                          and the paper are computed from.
+#   phase3_implementation/results/*.csv - the human-readable summary.
+#   writeup/figures/*.pdf               - figures referenced by the writeup.
