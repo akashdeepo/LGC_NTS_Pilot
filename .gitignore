@@ -33,6 +33,14 @@ Thumbs.db
 # Intermediate temp files written by run_mc.py during checkpointing.
 *.npz.tmp
 
+# --- Private / unshared work (kept locally only) ---------------------
+# The writeup and earlier research notes live in the local filesystem but
+# are deliberately not part of the public repository.
+writeup/
+phase1_literature_notes.md
+phase1_survey_and_gap_analysis.md
+NTS Meets Local Gaussian Correlation_ Literature Survey and Gap Analysis.pdf
+
 # --- Things explicitly NOT ignored -----------------------------------
 # We DO commit:
 #   phase3_implementation/cache/*.npz   - small, expensive to compute, useful
